@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-10-24T21:15:05+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alex’s Blog</title><subtitle>Security focused blog with a pentesting articles and software development tricks.</subtitle><entry><title type="html">Mobile Security Guide</title><link href="http://localhost:4000/2020-10-24/mobile-security-guide" rel="alternate" type="text/html" title="Mobile Security Guide" /><published>2020-10-24T12:20:22+03:00</published><updated>2020-10-24T12:20:22+03:00</updated><id>http://localhost:4000/2020-10-24/mobile-security-guide</id><content type="html" xml:base="http://localhost:4000/2020-10-24/mobile-security-guide">&lt;p&gt;My security testing guide for Mobile Pentesting with Android or iOS techniques and tools used while doing such engagements.&lt;/p&gt;
+
+&lt;h1 id=&quot;android&quot;&gt;Android&lt;/h1&gt;
+
+&lt;p&gt;Tools:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;JD-GUI&lt;/li&gt;
+  &lt;li&gt;Android Studio&lt;/li&gt;
+  &lt;li&gt;apktool&lt;/li&gt;
+  &lt;li&gt;dex2jar&lt;/li&gt;
+  &lt;li&gt;adb&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Directory where apps are installed by default: &lt;strong&gt;/data/data&lt;/strong&gt;
+SD card directory: &lt;strong&gt;/sdcard&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;tapjacking&quot;&gt;Tapjacking&lt;/h2&gt;
+
+&lt;p&gt;General mitigation of Tapjacking: &lt;strong&gt;filterTouchesWhenObscured = “true”&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;More advanced mitigation available in Android API 29:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Check the FLAG_WINDOW_IS_PARTIALLY_OBSCURED flag&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onFilterTouchEventForSecurity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MotionEvent&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getFlags&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MotionEvent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;FLAG_WINDOW_IS_OBSCURED&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MotionEvent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;FLAG_WINDOW_IS_OBSCURED&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getFlags&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MotionEvent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;FLAG_WINDOW_IS_PARTIALLY_OBSCURED&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MotionEvent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;FLAG_WINDOW_IS_PARTIALLY_OBSCURED&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;onFilterTouchEventForSecurity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>root@kali</name></author><summary type="html">My security testing guide for Mobile Pentesting with Android or iOS techniques and tools used while doing such engagements.</summary></entry><entry><title type="html">Hugo vs Jekyll</title><link href="http://localhost:4000/2020-01-05/hugo-vs-jekyll" rel="alternate" type="text/html" title="Hugo vs Jekyll" /><published>2020-01-05T11:20:22+02:00</published><updated>2020-01-05T11:20:22+02:00</updated><id>http://localhost:4000/2020-01-05/hugo-vs-jekyll</id><content type="html" xml:base="http://localhost:4000/2020-01-05/hugo-vs-jekyll">&lt;p&gt;Hello World!&lt;/p&gt;
+
+&lt;p&gt;For long I’ve been trying to take some free time and create a blog where I can discuss/save different articles about penetration testing and software development. I will also use this blog as a motivation to try and learn new things.&lt;/p&gt;
+
+&lt;p&gt;At first I wanted to create a simple blog in HTML by hand but it required too much editing time for each post/article, so I decided to try Hugo but it was really hard to keep in mind every file used by Hugo themes. I’ve noticed that a certain Hugo theme I liked “hugo-tale” was imported from Jekyll, the next step as you probably have already guessed was to try Jekyll (I’m not a big user of Ruby) but I felt Jekyll was really easy to use and understand.&lt;/p&gt;
+
+&lt;p&gt;Setting up Jekyll is really easy:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;gem &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;bundler jekyll
+jekyll new my-awesome-site
+&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;my-awesome-site&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Congrats! Now you have created your first Jekyll site. To run a local server and see how the basic Jekyll page looks you will need to run:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The theme I used is: &lt;a href=&quot;https://github.com/chesterhow/tale&quot;&gt;Tale&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll page&lt;/a&gt; for more info about Jekyll.&lt;/p&gt;</content><author><name>root@kali</name></author><summary type="html">Hello World!</summary></entry></feed>
