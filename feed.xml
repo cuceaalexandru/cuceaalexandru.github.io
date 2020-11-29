@@ -1,4 +1,95 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-10-24T21:15:05+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alex’s Blog</title><subtitle>Security focused blog with a pentesting articles and software development tricks.</subtitle><entry><title type="html">Mobile Security Guide</title><link href="http://localhost:4000/2020-10-24/mobile-security-guide" rel="alternate" type="text/html" title="Mobile Security Guide" /><published>2020-10-24T12:20:22+03:00</published><updated>2020-10-24T12:20:22+03:00</updated><id>http://localhost:4000/2020-10-24/mobile-security-guide</id><content type="html" xml:base="http://localhost:4000/2020-10-24/mobile-security-guide">&lt;p&gt;My security testing guide for Mobile Pentesting with Android or iOS techniques and tools used while doing such engagements.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-11-29T20:02:50+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alex’s Blog</title><subtitle>Security focused blog with a pentesting articles and software development tricks.</subtitle><entry><title type="html">JavaScript Cheatsheet</title><link href="http://localhost:4000/2020-11-24/javascript-cheatsheet" rel="alternate" type="text/html" title="JavaScript Cheatsheet" /><published>2020-11-24T11:33:07+02:00</published><updated>2020-11-24T11:33:07+02:00</updated><id>http://localhost:4000/2020-11-24/javascript-cheatsheet</id><content type="html" xml:base="http://localhost:4000/2020-11-24/javascript-cheatsheet">&lt;h2 id=&quot;two-main-kinds-of-javascript-environments&quot;&gt;Two main kinds of “JavaScript” environments:&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-the-runtimes&quot;&gt;1. The runtimes:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Browser JavaScript engines&lt;/strong&gt; - V8 (JavaScript engine) in Chromium (web browser), SquirrelFish Extreme in WebKit and Safari, SpiderMonkey (JavaScript engine) in Mozilla Firefox.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Server-side JavaScript engines&lt;/strong&gt; - V8 in Node.js, and some lesser-known ones.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Embedded engines&lt;/strong&gt; - Rhino (JavaScript) used for embedding in programsJava (programming language).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2-the-libraries&quot;&gt;2. The libraries:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Generic JavaScript&lt;/strong&gt; libraries that do not depend on browsers - Underscore.js.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Browser libraries and frameworks&lt;/strong&gt; - jQuery, BackboneJS, and proprietary ones like rum.js.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;npm (package manager)&lt;/strong&gt; modules for Node.js, which can also contain native machine code.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;CommonJS&lt;/strong&gt; modules that may be used both with Node.js and in browsers.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;popular-javascript-enginesframeworkstools&quot;&gt;Popular JavaScript Engines/Frameworks/Tools&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;npm&lt;/strong&gt;: is a package manager for the JavaScript programming language.&lt;br /&gt;
+&lt;strong&gt;React&lt;/strong&gt;: is an open-source, front end, JavaScript library for building user interfaces or UI components.&lt;br /&gt;
+&lt;strong&gt;Express.js&lt;/strong&gt;: is a back end web application framework for Node.js, released as free and open-source software (it is designed for building web applications and APIs).&lt;br /&gt;
+&lt;strong&gt;Vue.js&lt;/strong&gt;: is an open-source model–view–viewmodel front end JavaScript framework for building user interfaces and single-page applications.&lt;br /&gt;
+&lt;strong&gt;Deno&lt;/strong&gt;: is a runtime for JavaScript and TypeScript that is based on the V8 JavaScript engine and the Rust programming language.&lt;br /&gt;
+&lt;strong&gt;Angular&lt;/strong&gt;: is a TypeScript-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations.&lt;br /&gt;
+&lt;strong&gt;Electron&lt;/strong&gt;: is an open-source software framework developed and maintained by GitHub.&lt;br /&gt;
+&lt;strong&gt;jQuery&lt;/strong&gt;: is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.&lt;br /&gt;
+&lt;strong&gt;Yarn&lt;/strong&gt;: is a new package manager that replaces the existing workflow for the npm client or other package managers while remaining compatible with the npm registry.&lt;br /&gt;
+&lt;strong&gt;webpack&lt;/strong&gt;: is an open-source JavaScript module bundler. It is made primarily for JavaScript, but it can transform front-end assets such as HTML, CSS, and images if the corresponding loaders are included.&lt;br /&gt;
+&lt;strong&gt;AngularJS&lt;/strong&gt;: is a JavaScript-based open-source front-end web framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges encountered in developing single-page applications.&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;whats-the-difference-between-angular-and-angularjs&quot;&gt;&lt;strong&gt;Whats the difference between Angular and AngularJS:&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;The answer to this question is that AngularJS is the first version of Angular.
+It works with javascript and it is still getting supported but it is not compatible with Angular.&lt;/p&gt;
+
+&lt;h2 id=&quot;code-samples&quot;&gt;Code Samples:&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;c1&quot;&gt;//Sort drinks by price in Javascript&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sortDrinkByPrice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;drinks&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;compare&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;price&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;price&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;price&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;price&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;drinks&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;compare&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;minMax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;c1&quot;&gt;//Get min and max from array and convert it into a numbers array so&lt;/span&gt;
+	&lt;span class=&quot;c1&quot;&gt;//we can return it since Javascript doesn't support multiple values return&lt;/span&gt;
+	&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+	    &lt;span class=&quot;nx&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	
+	&lt;span class=&quot;c1&quot;&gt;//Return numbers as arrays&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;common-vulnerabilities&quot;&gt;Common Vulnerabilities&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Prototype pollution&lt;/strong&gt;: polluting the prototype of a base object which can sometimes lead to arbitrary code execution, prototype pollution happens at some unsafe merge, clone, extend and path assignment operations on malicious JSON objects.&lt;/p&gt;
+
+&lt;p&gt;JavaScript is often described as a prototype-based language. The &lt;strong&gt;proto&lt;/strong&gt; property of Object.prototype exposes the internal Prototype (either an object or null) of the object through which it is accessed. The use of &lt;strong&gt;proto&lt;/strong&gt; is controversial, but modern browsers support it anyway.&lt;/p&gt;
+
+&lt;p&gt;A common undesired practice is overwriting the prototype of a default JavaScript object. If we modify the prototype of an object in one place, then the behavior of all objects might be affected throughout the entire application. For example, in the code snippet below, the toString() method of an object is hijacked and then all objects get polluted.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// you can play with the following code snippet in browser console.&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;person&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;John Doe&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;person&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// John Doe&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;person&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;__proto__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toString&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;evil&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)}&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;person&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// an alert box with &quot;evil&quot; pops up&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;person2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;person2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// {}&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// an alert box with &quot;evil&quot; pops up&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;More on: https://codeburst.io/what-is-prototype-pollution-49482fc4b638&lt;/p&gt;
+
+&lt;h2 id=&quot;common-fixes-of-vulnerabilities&quot;&gt;Common fixes of vulnerabilities&lt;/h2&gt;</content><author><name>root@kali</name></author><summary type="html">Two main kinds of “JavaScript” environments:</summary></entry><entry><title type="html">Mobile Security Guide</title><link href="http://localhost:4000/2020-10-24/mobile-security-guide" rel="alternate" type="text/html" title="Mobile Security Guide" /><published>2020-10-24T12:20:22+03:00</published><updated>2020-10-24T12:20:22+03:00</updated><id>http://localhost:4000/2020-10-24/mobile-security-guide</id><content type="html" xml:base="http://localhost:4000/2020-10-24/mobile-security-guide">&lt;p&gt;My security testing guide for Mobile Pentesting with Android or iOS techniques and tools used while doing such engagements.&lt;/p&gt;
 
 &lt;h1 id=&quot;android&quot;&gt;Android&lt;/h1&gt;
 

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>JavaScript Cheatsheet | Alex’s Blog</title>
+<meta name="generator" content="Jekyll v3.8.6" />
+<meta property="og:title" content="JavaScript Cheatsheet" />
+<meta name="author" content="root@kali" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Two main kinds of “JavaScript” environments:" />
+<meta property="og:description" content="Two main kinds of “JavaScript” environments:" />
+<link rel="canonical" href="http://localhost:4000/2020-11-24/javascript-cheatsheet" />
+<meta property="og:url" content="http://localhost:4000/2020-11-24/javascript-cheatsheet" />
+<meta property="og:site_name" content="Alex’s Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-11-24T11:33:07+02:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/2020-11-24/javascript-cheatsheet","headline":"JavaScript Cheatsheet","dateModified":"2020-11-24T11:33:07+02:00","datePublished":"2020-11-24T11:33:07+02:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2020-11-24/javascript-cheatsheet"},"author":{"@type":"Person","name":"root@kali"},"description":"Two main kinds of “JavaScript” environments:","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+
+  <!-- RSS -->
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Alex's Blog" />
+
+  <!-- Google Analytics-->
+  
+</head>
+
+
+  <body>
+
+    <nav class="nav">
+  <div class="nav-container">
+    <a href="/">
+      <h2 class="nav-title">Alex's Blog</h2>
+    </a>
+    <ul>
+      <li><a href="/about">About</a></li>
+      <li><a href="/">Posts</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+    <main>
+      <div class="post">
+  <div class="post-info">
+    <span>Written by</span>
+    
+        root@kali
+    
+
+    
+      <br>
+      <span>on&nbsp;</span><time datetime="2020-11-24 11:33:07 +0200">November 24, 2020</time>
+    
+  </div>
+
+  <h1 class="post-title">JavaScript Cheatsheet</h1>
+  <div class="post-line"></div>
+
+  <h2 id="two-main-kinds-of-javascript-environments">Two main kinds of “JavaScript” environments:</h2>
+
+<h3 id="1-the-runtimes">1. The runtimes:</h3>
+
+<ul>
+  <li><strong>Browser JavaScript engines</strong> - V8 (JavaScript engine) in Chromium (web browser), SquirrelFish Extreme in WebKit and Safari, SpiderMonkey (JavaScript engine) in Mozilla Firefox.</li>
+  <li><strong>Server-side JavaScript engines</strong> - V8 in Node.js, and some lesser-known ones.</li>
+  <li><strong>Embedded engines</strong> - Rhino (JavaScript) used for embedding in programsJava (programming language).</li>
+</ul>
+
+<h3 id="2-the-libraries">2. The libraries:</h3>
+
+<ul>
+  <li><strong>Generic JavaScript</strong> libraries that do not depend on browsers - Underscore.js.</li>
+  <li><strong>Browser libraries and frameworks</strong> - jQuery, BackboneJS, and proprietary ones like rum.js.</li>
+  <li><strong>npm (package manager)</strong> modules for Node.js, which can also contain native machine code.</li>
+  <li><strong>CommonJS</strong> modules that may be used both with Node.js and in browsers.</li>
+</ul>
+
+<h2 id="popular-javascript-enginesframeworkstools">Popular JavaScript Engines/Frameworks/Tools</h2>
+
+<p><strong>npm</strong>: is a package manager for the JavaScript programming language.<br />
+<strong>React</strong>: is an open-source, front end, JavaScript library for building user interfaces or UI components.<br />
+<strong>Express.js</strong>: is a back end web application framework for Node.js, released as free and open-source software (it is designed for building web applications and APIs).<br />
+<strong>Vue.js</strong>: is an open-source model–view–viewmodel front end JavaScript framework for building user interfaces and single-page applications.<br />
+<strong>Deno</strong>: is a runtime for JavaScript and TypeScript that is based on the V8 JavaScript engine and the Rust programming language.<br />
+<strong>Angular</strong>: is a TypeScript-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations.<br />
+<strong>Electron</strong>: is an open-source software framework developed and maintained by GitHub.<br />
+<strong>jQuery</strong>: is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.<br />
+<strong>Yarn</strong>: is a new package manager that replaces the existing workflow for the npm client or other package managers while remaining compatible with the npm registry.<br />
+<strong>webpack</strong>: is an open-source JavaScript module bundler. It is made primarily for JavaScript, but it can transform front-end assets such as HTML, CSS, and images if the corresponding loaders are included.<br />
+<strong>AngularJS</strong>: is a JavaScript-based open-source front-end web framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges encountered in developing single-page applications.<br /></p>
+
+<h4 id="whats-the-difference-between-angular-and-angularjs"><strong>Whats the difference between Angular and AngularJS:</strong></h4>
+<p>The answer to this question is that AngularJS is the first version of Angular.
+It works with javascript and it is still getting supported but it is not compatible with Angular.</p>
+
+<h2 id="code-samples">Code Samples:</h2>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">//Sort drinks by price in Javascript</span>
+
+<span class="kd">function</span> <span class="nx">sortDrinkByPrice</span><span class="p">(</span><span class="nx">drinks</span><span class="p">)</span> <span class="p">{</span>
+	<span class="kd">function</span> <span class="nx">compare</span><span class="p">(</span> <span class="nx">a</span><span class="p">,</span> <span class="nx">b</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span> <span class="nx">a</span><span class="p">.</span><span class="nx">price</span> <span class="o">&lt;</span> <span class="nx">b</span><span class="p">.</span><span class="nx">price</span> <span class="p">){</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">if</span> <span class="p">(</span> <span class="nx">a</span><span class="p">.</span><span class="nx">price</span> <span class="o">&gt;</span> <span class="nx">b</span><span class="p">.</span><span class="nx">price</span> <span class="p">){</span>
+    <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+	<span class="p">}</span>
+	
+	<span class="k">return</span> <span class="nx">drinks</span><span class="p">.</span><span class="nx">sort</span><span class="p">(</span><span class="nx">compare</span><span class="p">)</span>
+	
+<span class="p">}</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">minMax</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="p">{</span>
+	<span class="c1">//Get min and max from array and convert it into a numbers array so</span>
+	<span class="c1">//we can return it since Javascript doesn't support multiple values return</span>
+	<span class="kd">let</span> <span class="nx">min</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">min</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="nb">Math</span><span class="p">,</span><span class="nx">arr</span><span class="p">),</span>
+	    <span class="nx">max</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">max</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="nb">Math</span><span class="p">,</span><span class="nx">arr</span><span class="p">);</span>
+	
+	<span class="c1">//Return numbers as arrays</span>
+	<span class="k">return</span> <span class="p">[</span><span class="nx">min</span><span class="p">,</span><span class="nx">max</span><span class="p">];</span>
+<span class="p">}</span></code></pre></figure>
+
+<h2 id="common-vulnerabilities">Common Vulnerabilities</h2>
+
+<p><strong>Prototype pollution</strong>: polluting the prototype of a base object which can sometimes lead to arbitrary code execution, prototype pollution happens at some unsafe merge, clone, extend and path assignment operations on malicious JSON objects.</p>
+
+<p>JavaScript is often described as a prototype-based language. The <strong>proto</strong> property of Object.prototype exposes the internal Prototype (either an object or null) of the object through which it is accessed. The use of <strong>proto</strong> is controversial, but modern browsers support it anyway.</p>
+
+<p>A common undesired practice is overwriting the prototype of a default JavaScript object. If we modify the prototype of an object in one place, then the behavior of all objects might be affected throughout the entire application. For example, in the code snippet below, the toString() method of an object is hijacked and then all objects get polluted.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// you can play with the following code snippet in browser console.</span>
+
+<span class="kd">let</span> <span class="nx">person</span> <span class="o">=</span> <span class="p">{</span><span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">John Doe</span><span class="dl">'</span><span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">person</span><span class="p">.</span><span class="nx">name</span><span class="p">)</span>
+<span class="c1">// John Doe</span>
+
+<span class="nx">person</span><span class="p">.</span><span class="nx">__proto__</span><span class="p">.</span><span class="nx">toString</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span><span class="nx">alert</span><span class="p">(</span><span class="dl">'</span><span class="s1">evil</span><span class="dl">'</span><span class="p">)}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">person</span><span class="p">.</span><span class="nx">name</span><span class="p">)</span>
+<span class="c1">// an alert box with "evil" pops up</span>
+
+<span class="kd">let</span> <span class="nx">person2</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">person2</span><span class="p">)</span>
+<span class="c1">// {}</span>
+<span class="c1">// an alert box with "evil" pops up</span></code></pre></figure>
+
+<p>More on: https://codeburst.io/what-is-prototype-pollution-49482fc4b638</p>
+
+<h2 id="common-fixes-of-vulnerabilities">Common fixes of vulnerabilities</h2>
+
+
+</div>
+
+
+
+<div class="pagination">
+  
+  
+    <a href="/2020-10-24/mobile-security-guide" class="right arrow">&#8594;</a>
+  
+
+  <a href="#" class="top">Top</a>
+</div>
+    </main>
+
+    <footer>
+  <span>
+    &copy; <time datetime="2020-11-29 20:02:50 +0200">2020</time> . Made with Jekyll using the <a href="https://github.com/chesterhow/tale/">Tale</a> theme.
+  </span>
+</footer>
+
+  </body>
+</html>
